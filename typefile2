@@ -1,0 +1,6 @@
+Bash=.conf,.cfg,.spec,.md,.sh,.bash,.ksh,.rc,.patch,.yaml,.yml,.md,.json
+HTML=.haml,.html,.htm,.shtml,.stm,.sht,.oth,.xhtml
+Java=.jsx,.java,.erb
+Pascal=.pas
+Ruby=.pp,.rb,.bee,.service,.essence,.el7,.el5,.el6,rake.bundle,Rakefile
+X-Midas=.keep,.txt,.rst
