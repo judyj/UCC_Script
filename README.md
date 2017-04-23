@@ -1,2 +1,3 @@
 # UCC_Script
 This is my script - can be used as is (if we have last month's pull) or used as notes if i get hit by a truck or win the lottery...
+The Universal Code Counter tool that is being used is here:  http://csse.usc.edu/ucc_new/wordpress/2015/12/30/ucc-version-2015-12/
