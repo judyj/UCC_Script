@@ -1,9 +1,13 @@
 #!/bin.bash
 #  sloc_setup.sh
+# set directory names
+OLD_DIR=/home/judy/compare/simp6_feb_baseline/
+NEW_DIR=/home/judy/compare/sloc_0422/
+UCC_DIR=/home/judy/ucc/
 #
 # create the directory for the new pull
-mkdir sloc_0501
-cd sloc_0501
+mkdir $NEW_DIR
+cd $NEW_DIR
 # get simp-core and check out stuff there
 git clone https://github.com/simp/simp-core.git
 cd simp-core
@@ -47,8 +51,8 @@ bundle
 cd ..
 # back to starting point
 cd ..
-UCC -extfile /var/jjohnson/UCC/ucc_2015.12/typefile2 -unified -nocomplex -d -dir /var/jjohnson/sloc_0401/rubies /var/jjohnson/sloc_0501/rubies -outdir ../diffsloc0501rubies
-UCC -extfile /var/jjohnson/UCC/ucc_2015.12/typefile2 -unified -nocomplex -d -dir outfile_diff_results.csv/var/jjohnson/sloc_0401/simp-core /var/jjohnson/sloc_0501/simp-core -outdir ../diffsloc0501core
+UCC -extfile $UCC_DIR/typefile2 -unified -nocomplex -d -dir $OLD_DIR/rubies $NEW_DIR/rubies -outdir ../diffsloc0422rubies
+UCC -extfile $UCC_DIR/typefile2 -unified -nocomplex -d -dir $OLD_DIR/simp-core $NEW_DIR/simp-core -outdir ../diffsloc0422core
 # the data you need will be in 
 # ../diffsloc0401core/outfile_diff_results.csv
-# ../diffsloc0501rubies/outfile_diff_results.csv
+# ../diffsloc0422rubies/outfile_diff_results.csv
