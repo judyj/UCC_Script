@@ -21,7 +21,7 @@ git clone https://github.com/simp/rubygem-simp-rake-helpers.git
 cd rubygem-simp-rake-helpers
 bundle
 cd ..
-git clone https://github.com/simp/rubygem-simp-rspec-puppet-facts
+git clone https://github.com/simp/rubygem-simp-rspec-puppet-facts.git
 cd rubygem-simp-rspec-puppet-facts
 bundle
 cd ..
@@ -38,11 +38,11 @@ cd rubygem-simp-processgraph
 bundle
 cd ..
 git clone https://github.com/simp/rubygem-simp-build-helpers.git
-cd rubygem-simp-beaker-helpers
+cd rubygem-simp-build-helpers
 bundle
 cd ..
 git clone https://github.com/simp/rubygem-simp-module-repoclosure.git
-cd rubygem-simp-beaker-helpers
+cd rubygem-simp-module-repoclosure
 bundle
 cd ..
 git clone https://github.com/simp/rubygem-simp-release-tools.git
@@ -51,8 +51,8 @@ bundle
 cd ..
 # back to starting point
 cd ..
-UCC -extfile $UCC_DIR/typefile2 -unified -nocomplex -d -dir $OLD_DIR/rubies $NEW_DIR/rubies -outdir ../diffsloc0422rubies
-UCC -extfile $UCC_DIR/typefile2 -unified -nocomplex -d -dir $OLD_DIR/simp-core $NEW_DIR/simp-core -outdir ../diffsloc0422core
+UCC -extfile $UCC_DIR/typefile2 -unified -nocomplex -d -dir $OLD_DIR/rubies $NEW_DIR/rubies -outdir ../diffslocdaterubies
+UCC -extfile $UCC_DIR/typefile2 -unified -nocomplex -d -dir $OLD_DIR/simp-core $NEW_DIR/simp-core -outdir ../diffslocdatecore
 # the data you need will be in 
-# ../diffsloc0401core/outfile_diff_results.csv
-# ../diffsloc0422rubies/outfile_diff_results.csv
+# ../diffslocdatecore/outfile_diff_results.csv
+# ../diffslocdaterubies/outfile_diff_results.csv
