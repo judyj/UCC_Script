@@ -5,7 +5,7 @@ OLD_DIR=/home/jjohnson/SLOC/sloc_0701/
 NEW_DIR=/home/jjohnson/SLOC/sloc_0801/
 OUT_DIR_CORE=/home/jjohnson/SLOC/0801diffscore/
 OUT_DIR_RUBY=/home/jjohnson/SLOC/0801diffsruby/
-UCC_DIR=/home/jjohnson/UCC/UCC_Script
+UCC_DIR=/home/jjohnson/SLOC/UCC/UCC_Script
 #
 # create the directory for the new pull
 mkdir $NEW_DIR
