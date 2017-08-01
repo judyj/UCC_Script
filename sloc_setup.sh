@@ -1,9 +1,11 @@
 #!/bin.bash
 #  sloc_setup.sh
 # set directory names
-OLD_DIR=/home/judy/compare/simp6_feb_baseline/
-NEW_DIR=/home/judy/compare/sloc_0422/
-UCC_DIR=/home/judy/ucc/
+OLD_DIR=/home/jjohnson/compare/simp6_feb_baseline/
+NEW_DIR=/home/jjohnson/compare/sloc_0422/
+OUT_DIR_CORE = /home/jjohnson/SLOC/0801diffscore
+OUT_DIR_RUBY = /home/jjohnson/SLOC/0801diffsruby
+UCC_DIR=/home/jjohnson/UCC/UCC_Script
 #
 # create the directory for the new pull
 mkdir $NEW_DIR
@@ -51,8 +53,8 @@ bundle
 cd ..
 # back to starting point
 cd ..
-UCC -extfile $UCC_DIR/typefile2 -unified -nocomplex -d -dir $OLD_DIR/rubies $NEW_DIR/rubies -outdir ../diffslocdaterubies
-UCC -extfile $UCC_DIR/typefile2 -unified -nocomplex -d -dir $OLD_DIR/simp-core $NEW_DIR/simp-core -outdir ../diffslocdatecore
+UCC -extfile $UCC_DIR/typefile2 -unified -nocomplex -d -dir $OLD_DIR/rubies $NEW_DIR/rubies -outdir $OUT_DIR_RUBY
+UCC -extfile $UCC_DIR/typefile2 -unified -nocomplex -d -dir $OLD_DIR/simp-core $NEW_DIR/simp-core -outdir $OUT_DIR_CORE
 # the data you need will be in 
-# ../diffslocdatecore/outfile_diff_results.csv
-# ../diffslocdaterubies/outfile_diff_results.csv
+# $OUT_DIR_CORE/outfile_diff_results.csv
+# $OUT_DIR_RUBY/outfile_diff_results.csv
