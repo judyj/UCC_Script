@@ -53,8 +53,8 @@ bundle
 cd ..
 # back to starting point
 cd ..
-UCC -extfile $UCC_DIR/typefile2 -unified -nocomplex -d -dir $OLD_DIR/rubies $NEW_DIR/rubies -outdir $OUT_DIR_RUBY
-UCC -extfile $UCC_DIR/typefile2 -unified -nocomplex -d -dir $OLD_DIR/simp-core $NEW_DIR/simp-core -outdir $OUT_DIR_CORE
+$UCC_DIR/UCC -extfile $UCC_DIR/typefile2 -unified -nocomplex -d -dir $OLD_DIR/rubies $NEW_DIR/rubies -outdir $OUT_DIR_RUBY
+$UCC_DIR/UCC -extfile $UCC_DIR/typefile2 -unified -nocomplex -d -dir $OLD_DIR/simp-core $NEW_DIR/simp-core -outdir $OUT_DIR_CORE
 # the data you need will be in 
 # $OUT_DIR_CORE/outfile_diff_results.csv
 # $OUT_DIR_RUBY/outfile_diff_results.csv
